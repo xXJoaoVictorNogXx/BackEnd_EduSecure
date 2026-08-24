@@ -1,4 +1,4 @@
-package model;
+package backedusecure.demo.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -8,8 +8,8 @@ import java.util.UUID;
 
 @Data
 @Entity
-@Table(name = "prova")
-public final class Prova {
+@Table(name = "tb_prova")
+public class Prova {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)// @GeneratedValue: Delega a responsabilidade de criar a chave primária ao banco de dados
