@@ -6,7 +6,14 @@ import lombok.Data;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Data
+//@Data Tomar cuidado ao utilizar @Data em entities, ele pode causar erros no código
+import lombok.Getter;
+import lombok.Setter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "tb_prova")
 public class Prova {
@@ -23,5 +30,8 @@ public class Prova {
 
     @Column(name = "data_criacao")
     private LocalDateTime dataCriacao;
+
+    public void getTitulo(String titulo) {
+    }
 }
 
