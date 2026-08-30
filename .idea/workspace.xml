@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="245e34b7-fd46-41e5-bd90-f167676016f3" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/controller/ProvaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/ProvaRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/ProvaResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/repository/ProvaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/ProvaService.java" afterDir="false" />
+    <list default="true" id="245e34b7-fd46-41e5-bd90-f167676016f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Alternativa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Questao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/RespostaAluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Prova.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Prova.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,6 +134,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Feat: Add DTOs, Service, Controller, Repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: Add DTOs, Service, Controller, Repository" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/RespostaAluno.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
