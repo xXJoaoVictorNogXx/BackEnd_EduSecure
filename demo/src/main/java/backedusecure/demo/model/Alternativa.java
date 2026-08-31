@@ -1,0 +1,28 @@
+package backedusecure.demo.model;
+
+
+import jakarta.persistence.*;
+
+import java.util.UUID;
+
+@Entity
+public class Alternativa {
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
+
+    @Column(nullable = false)
+    private String texto;
+
+    @Column(nullable = false)
+    private String letra;
+
+    @Column(nullable = false)
+    private Boolean correta;
+
+
+    @ManyToOne
+    @JoinColumn(name = "questao_id", nullable = false)// Cria a chave estrangeira no banco
+    private Questao questao;
+
+}
