@@ -1,8 +1,8 @@
 package backedusecure.demo.controller;
 
 
-import backedusecure.demo.dto.ProvaRequestDTO;
-import backedusecure.demo.dto.ProvaResponseDTO;
+import backedusecure.demo.dto.RequestDTO.ProvaRequestDTO;
+import backedusecure.demo.dto.ResponseDTO.ProvaResponseDTO;
 import backedusecure.demo.service.ProvaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

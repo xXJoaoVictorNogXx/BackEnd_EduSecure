@@ -1,6 +1,4 @@
-package backedusecure.demo.dto;
-
-import jakarta.persistence.Column;
+package backedusecure.demo.dto.ResponseDTO;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

@@ -1,11 +1,18 @@
 package backedusecure.demo.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.annotation.processing.Generated;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@Entity
 public class RespostaAluno {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
