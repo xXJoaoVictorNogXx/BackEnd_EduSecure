@@ -18,7 +18,7 @@ import java.util.UUID;
 public class Questao {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private UUID idQuestao;
 
     @Column(nullable = false, columnDefinition = "TEXT")//Text é util caso o enunciado seja longo
     private String enunciado;

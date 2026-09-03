@@ -1,7 +1,7 @@
 package backedusecure.demo.mappers;
 
-import backedusecure.demo.dto.RequestDTO.ProvaRequestDTO;
-import backedusecure.demo.dto.ResponseDTO.ProvaResponseDTO;
+import backedusecure.demo.dto.request.ProvaRequestDTO;
+import backedusecure.demo.dto.response.ProvaResponseDTO;
 import backedusecure.demo.model.Prova;
 import org.springframework.stereotype.Component;
 
@@ -21,7 +21,7 @@ public class ProvaMapper {
            if(prova == null) return null;
 
            return new ProvaResponseDTO(
-                    prova.getId(),
+                    prova.getIdProva(),
                     prova.getTitulo(),
                     prova.getDisciplina(),
                     prova.getDataCriacao()

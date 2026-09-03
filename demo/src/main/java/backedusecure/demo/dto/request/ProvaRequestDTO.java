@@ -1,4 +1,4 @@
-package backedusecure.demo.dto.RequestDTO;
+package backedusecure.demo.dto.request;
 
 import java.time.LocalDateTime;
 

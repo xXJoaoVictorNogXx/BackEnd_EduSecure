@@ -15,7 +15,7 @@ import java.util.UUID;
 public class Alternativa {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private UUID idAlternativa;
 
     @Column(nullable = false)
     private String texto;

@@ -1,4 +1,4 @@
-package backedusecure.demo.dto.ResponseDTO;
+package backedusecure.demo.dto.response;
 
 import java.util.UUID;
 
