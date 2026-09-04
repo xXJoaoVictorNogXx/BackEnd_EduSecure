@@ -3,9 +3,7 @@ package backedusecure.demo.service;
 import backedusecure.demo.dto.request.RespostaMarcadaDTO;
 import backedusecure.demo.dto.request.SincronizacaoRequestDTO;
 import backedusecure.demo.enums.StatusEnvio;
-import backedusecure.demo.model.Prova;
-import backedusecure.demo.model.ProvaAluno;
-import backedusecure.demo.model.RespostaAluno;
+import backedusecure.demo.model.*;
 import backedusecure.demo.repository.ProvaAlunoRepository;
 import backedusecure.demo.repository.ProvaRepository;
 import backedusecure.demo.repository.RespostaAlunoRepository;
@@ -49,10 +47,22 @@ public class SincronizacaoService {
         if(request.getRespostas() != null) {
             for(RespostaMarcadaDTO respDTO : request.getRespostas()) {
                 RespostaAluno respostaAluno = new RespostaAluno();
-                respostaAluno.setIdAluno(request.getAlunoId());
-                respostaAluno.setIdProva(request.getProvaId());
-                respostaAluno.setIdQuestao(respDto.getQuestaoId());
-                respostaAluno.setAlternativaEscolhida(respDto.getAlternativaEscolhida());
+
+                Aluno aluno = new Aluno();
+                aluno.setIdAluno(request.idAluno());
+                respostaAluno.setIdAluno(aluno);
+
+                Prova prova = new Prova();
+                prova.setIdProva(request.idProva());
+                respostaAluno.setIdProva(prova);
+
+                Questao questao = new Questao();
+                questao.setIdQuestao(respDTO.idQuestao());
+                respostaAluno.setIdQuestao(questao);
+
+                Alternativa alternativa = new Alternativa();
+                respostaAluno.setAlternativaEscolhida(respDTO.idAlternativaEscolhida());
+
                 respostaAluno.setDataHoraResposta(respDto.getDataHoraResposta());
 
                 respostaAlunoRepository.save(respostaAluno);
@@ -60,13 +70,9 @@ public class SincronizacaoService {
         }
 
 
-        // 4. PASSOU NAS VALIDAÇÕES: Atualiza o status para sucesso
         provaDoAluno.setStatusEnvio(StatusEnvio.SINCRONIZADA);
-        provaDoAluno.setDataSincronizacao(LocalDateTime.now()); // Carimba o horário que o servidor recebeu
-
-        // 5. Salva a alteração da tentativa no banco
+        provaDoAluno.setDataSincronizacao(LocalDateTime.now());
         provaAlunoRepository.save(provaDoAluno);
 
-        // (Próximo passo futuro: salvar a lista de respostas e calcular a nota)
     }
 }

@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.annotation.processing.Generated;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -30,8 +29,9 @@ public class RespostaAluno {
     @JoinColumn(name = "questao_id", nullable = false)
     private Questao idQuestao;
 
-    @Column(nullable = false)
-    private String alternativaEscolhida;
+    @ManyToOne
+    @JoinColumn(name = "id_alternativa_escolhida")
+    private Alternativa alternativaEscolhida;
 
     @Column(nullable = false)
     private LocalDateTime dataHoraResposta;

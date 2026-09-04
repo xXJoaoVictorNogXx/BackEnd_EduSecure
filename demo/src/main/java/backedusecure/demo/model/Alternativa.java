@@ -26,7 +26,6 @@ public class Alternativa {
     @Column(nullable = false)
     private Boolean correta;
 
-
     @ManyToOne
     @JoinColumn(name = "questao_id", nullable = false)// Cria a chave estrangeira no banco
     private Questao questao;
