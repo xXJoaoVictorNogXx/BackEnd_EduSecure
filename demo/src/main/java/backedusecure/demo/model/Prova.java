@@ -20,7 +20,7 @@ public class Prova {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)// @GeneratedValue: Delega a responsabilidade de criar a chave primária ao banco de dados
-    private UUID id;
+    private UUID idProva;
 
     @Column(nullable = false, length = 150)
     private String titulo;
@@ -31,7 +31,7 @@ public class Prova {
     @Column(name = "data_criacao")
     private LocalDateTime dataCriacao;
 
-    public void getTitulo(String titulo) {
-    }
+    @Column(name = "data_limite")
+    private LocalDateTime dataLimite;
 }
 

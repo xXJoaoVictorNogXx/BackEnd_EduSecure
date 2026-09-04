@@ -21,7 +21,7 @@ public class ProvaMapper {
            if(prova == null) return null;
 
            return new ProvaResponseDTO(
-                    prova.getId(),
+                    prova.getIdProva(),
                     prova.getTitulo(),
                     prova.getDisciplina(),
                     prova.getDataCriacao()

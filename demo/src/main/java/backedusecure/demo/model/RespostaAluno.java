@@ -16,19 +16,19 @@ import java.util.UUID;
 public class RespostaAluno {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private UUID idRespostaAluno;
 
     @ManyToOne
     @JoinColumn(name ="aluno_id", nullable = false)
-    private Aluno aluno;
+    private Aluno idAluno;
 
     @ManyToOne
     @JoinColumn(name="prova_id", nullable = false)
-    private Prova prova;
+    private Prova idProva;
 
     @ManyToOne
     @JoinColumn(name = "questao_id", nullable = false)
-    private Questao questao;
+    private Questao idQuestao;
 
     @Column(nullable = false)
     private String alternativaEscolhida;

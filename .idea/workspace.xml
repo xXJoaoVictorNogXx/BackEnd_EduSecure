@@ -5,30 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="245e34b7-fd46-41e5-bd90-f167676016f3" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/RespostaMarcadaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/SincronizacaoRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/ProvaAluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/repository/ProvaAlunoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/SincronizacaoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/controller/ProvaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/controller/ProvaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/RequestDTO/AlunoLoginRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/AlunoLoginRequestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/RequestDTO/EnvioProvaRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/EnvioProvaRequestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/RequestDTO/ProvaRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/ProvaRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/RequestDTO/RespostaQuestaoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/RespostaQuestaoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/RequestDTO/RespostaQuestaoDTO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/ResponseDTO/AlunoResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/AlunoResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/ResponseDTO/EnvioProvaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/EnvioProvaResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/ResponseDTO/ProvaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/ProvaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/enums/StatusEnvio.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/enums/StatusEnvio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/mappers/ProvaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/mappers/ProvaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Alternativa.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Alternativa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/HistoricoEnvio.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/HistoricoEnvio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Prova.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Prova.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Questao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Questao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/RespostaAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/RespostaAluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/repository/AlternativaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/repository/AlternativaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/repository/RespostaAlunoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/repository/RespostaAlunoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/ProvaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/ProvaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="6c03d562-bfc4-471b-af04-d1a5f8c4f6ba" value="" />
+    </colors>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Record" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,20 +64,23 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/xXJoaoVictorNogXx/BackEnd_EduSecure.git&quot;,
-    &quot;accountId&quot;: &quot;686435f3-46ef-40af-a88d-5c410ca9767a&quot;
+    &quot;accountId&quot;: &quot;4f76db44-9810-40b3-ab21-1c991949bb42&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="3IBR1nP7sXMPtQgX0zLUjfgF6Bj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
@@ -74,6 +97,7 @@
     &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -90,8 +114,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
       </set>
     </attachedChunks>
   </component>
@@ -105,8 +129,6 @@
       <updated>1787235762364</updated>
       <workItem from="1787235763527" duration="4093000" />
       <workItem from="1787246472269" duration="38000" />
-      <workItem from="1788259116735" duration="684000" />
-      <workItem from="1788346456620" duration="9797000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

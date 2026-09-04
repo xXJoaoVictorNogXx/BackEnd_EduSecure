@@ -5,8 +5,8 @@ import backedusecure.demo.dto.response.ProvaResponseDTO;
 import backedusecure.demo.mappers.ProvaMapper;
 import backedusecure.demo.model.Prova;
 import backedusecure.demo.repository.ProvaRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -19,6 +19,7 @@ public class ProvaService {
 
     private final ProvaMapper mapper;
 
+    @Transactional
     public ProvaResponseDTO criarProva(ProvaRequestDTO request) {
         // 1. Mapper cuida da conversão de entrada
         Prova novaProva = mapper.toEntity(request);

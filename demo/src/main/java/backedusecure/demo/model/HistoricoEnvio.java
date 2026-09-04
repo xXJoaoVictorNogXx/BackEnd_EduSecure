@@ -13,7 +13,7 @@ public class HistoricoEnvio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private UUID idAuditoria;
 
     @Column(nullable = false)
     private UUID idProva;

@@ -4,7 +4,7 @@ spring:
 
   # 1. Configurações de Conexão com o Postgres
   datasource:
-    url: jdbc:postgresql://localhost:5432/tcc_db
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: admin
     driver-class-name: org.postgresql.Driver
