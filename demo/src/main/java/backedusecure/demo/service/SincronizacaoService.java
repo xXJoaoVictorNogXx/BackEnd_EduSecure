@@ -5,20 +5,18 @@ import backedusecure.demo.dto.request.SincronizacaoRequestDTO;
 import backedusecure.demo.enums.StatusEnvio;
 import backedusecure.demo.model.*;
 import backedusecure.demo.repository.ProvaAlunoRepository;
-import backedusecure.demo.repository.ProvaRepository;
 import backedusecure.demo.repository.RespostaAlunoRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class SincronizacaoService {
-
-    private final ProvaRepository provaRepository;
 
     private final RespostaAlunoRepository respostaAlunoRepository;
 
@@ -27,25 +25,24 @@ public class SincronizacaoService {
     @Transactional
     public void processarSincronizacao(SincronizacaoRequestDTO request) {
 
-        // 1. Busca a tentativa do aluno ou explode uma exceção se não achar
         ProvaAluno provaDoAluno = provaAlunoRepository.findByAlunoIdAndProvaId(request.idAluno(), request.idProva())
                 .orElseThrow(() -> new RuntimeException("Tentativa de prova não encontrada para este aluno."));
 
-        // 2. VALIDAÇÃO DE DUPLICIDADE (Anti-Fraude)
         // Se o status já for SINCRONIZADA, o app não pode enviar de novo (evita reenvio malicioso ou duplo clique)
         if (provaDoAluno.getStatusEnvio() == StatusEnvio.SINCRONIZADA) {
             throw new RuntimeException("Atenção: Esta prova já foi sincronizada anteriormente.");
         }
 
-        // 3. VALIDAÇÃO DE PRAZO (Auditoria Offline)
+        //VALIDAÇÃO DE PRAZO (Auditoria Offline)
         LocalDateTime dataLimiteProva = provaDoAluno.getIdProva().getDataLimite();
 
         if (LocalDateTime.now().isAfter(dataLimiteProva)) {
             throw new RuntimeException("Fraude de tempo: O prazo limite para entrega desta avaliação já expirou.");
         }
 
-        if(request.getRespostas() != null) {
-            for(RespostaMarcadaDTO respDTO : request.getRespostas()) {
+        if(request.respostas() != null) {
+            List<RespostaAluno> respostasParaSalvar = new ArrayList<>();
+            for(RespostaMarcadaDTO respDTO : request.respostas()) {
                 RespostaAluno respostaAluno = new RespostaAluno();
 
                 Aluno aluno = new Aluno();
@@ -61,12 +58,13 @@ public class SincronizacaoService {
                 respostaAluno.setIdQuestao(questao);
 
                 Alternativa alternativa = new Alternativa();
-                respostaAluno.setAlternativaEscolhida(respDTO.idAlternativaEscolhida());
+                alternativa.setIdAlternativa(respDTO.idAlternativaEscolhida());
+                respostaAluno.setIdalternativaEscolhida(alternativa);
 
-                respostaAluno.setDataHoraResposta(respDto.getDataHoraResposta());
-
-                respostaAlunoRepository.save(respostaAluno);
+                respostaAluno.setDataHoraResposta(respDTO.dataHoraResposta());
+                respostasParaSalvar.add(respostaAluno);
             }
+                respostaAlunoRepository.saveAll(respostasParaSalvar);
         }
 
 

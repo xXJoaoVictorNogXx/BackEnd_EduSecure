@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="245e34b7-fd46-41e5-bd90-f167676016f3" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/RespostaMarcadaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/RespostaMarcadaDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Alternativa.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Alternativa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/RespostaAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/RespostaAluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/SincronizacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/SincronizacaoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +49,6 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="3IBR1nP7sXMPtQgX0zLUjfgF6Bj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -169,7 +168,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/RespostaAluno.java</url>
-          <line>15</line>
+          <line>14</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

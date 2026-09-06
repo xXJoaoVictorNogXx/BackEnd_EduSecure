@@ -30,8 +30,8 @@ public class RespostaAluno {
     private Questao idQuestao;
 
     @ManyToOne
-    @JoinColumn(name = "id_alternativa_escolhida")
-    private Alternativa alternativaEscolhida;
+    @JoinColumn(name = "alternativa_id")
+    private Alternativa idalternativaEscolhida;
 
     @Column(nullable = false)
     private LocalDateTime dataHoraResposta;

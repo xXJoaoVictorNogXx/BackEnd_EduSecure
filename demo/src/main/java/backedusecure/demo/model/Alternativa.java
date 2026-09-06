@@ -12,6 +12,7 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @Entity
+@Table(name = "tb_alternativa")
 public class Alternativa {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
