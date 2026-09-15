@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="245e34b7-fd46-41e5-bd90-f167676016f3" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/controller/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/DashboardMetricasDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/DashboardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Alternativa.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Alternativa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/RespostaAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/RespostaAluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/SincronizacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/SincronizacaoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
