@@ -1,9 +1,11 @@
 package backedusecure.demo.dto.response;
 
-public record DashboardMetricasDTO(Integer provasAplicadas,
-                                   String provasTrend,
-                                   Double mediaTurma,
-                                   String mediaTrend,
-                                   Integer taxaConclusao,
-                                   Integer questoesBanco) {
+import java.util.List;
+
+public record DashboardMetricasDTO(ProgressoTurmaDTO progresso,
+                                   double taxaIntegridade,
+                                   double mediaGeral,
+                                   int questoesDisponiveis,
+                                   List<AlunoSyncStatusDTO> listaSincronizacao,
+                                   List<AlertaAuditoriaDTO> feedAlertas) {
 }

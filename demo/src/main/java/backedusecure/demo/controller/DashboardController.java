@@ -20,7 +20,7 @@ public class DashboardController {
     @GetMapping("/metricas")
 
     public ResponseEntity<DashboardMetricasDTO> getMetricas() {
-        return  ResponseEntity.ok(dashboardService.getDashboardMetricas());
+        return  ResponseEntity.ok(dashboardService.obterMetricasDashboard());
     }
 
 }
