@@ -16,7 +16,6 @@ import java.util.*;
 @RequiredArgsConstructor
 public class QuestaoService {
 
-    private final RestClient questaoRestClient;
     private final RestClient restClient;
 
     @Transactional
@@ -48,7 +47,7 @@ public class QuestaoService {
             List<String> alternativas = new ArrayList<>();
             alternativas.add(respostaCerta);
 
-            for(String erradaBase64 : dto.incorrect_answer()){
+            for(String erradaBase64 : dto.incorrect_answers()){
                 String erradaLimpa = new String(decoder.decode(erradaBase64));
                 alternativas.add(erradaLimpa);
             }

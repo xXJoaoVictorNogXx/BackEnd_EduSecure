@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 
 //@Data Tomar cuidado ao utilizar @Data em entities, ele pode causar erros no código
@@ -27,6 +28,14 @@ public class Prova {
 
     @Column(nullable = false)
     private String disciplina;
+
+    @ManyToMany
+    @JoinTable(
+            name = "prova_questoes",
+            joinColumns = @JoinColumn(name = "prova_id"),
+            inverseJoinColumns = @JoinColumn(name = "questao_ide")
+    )
+    private List<Questao> questoes;
 
     @Column(name = "data_criacao")
     private LocalDateTime dataCriacao;

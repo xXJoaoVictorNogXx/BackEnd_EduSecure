@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="245e34b7-fd46-41e5-bd90-f167676016f3" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/config/RestClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/AlertaAuditoriaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/AlunoSyncStatusDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/OpenTdbQuestaoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/OpenTdbResponseWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/ProgressoTurmaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/QuestaoFrontEndDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/enums/CategoriaQuestoes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/QuestaoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/controller/QuestaoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/QuestaoRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/mappers/QuestaoMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/DashboardMetricasDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/DashboardMetricasDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/DashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/DashboardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/ProvaRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/request/ProvaRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/OpenTdbQuestaoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/OpenTdbQuestaoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/ProvaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/ProvaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/QuestaoFrontEndDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/dto/response/QuestaoFrontEndDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/mappers/ProvaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/mappers/ProvaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Prova.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Prova.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Questao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/model/Questao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/ProvaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/ProvaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/QuestaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/backedusecure/demo/service/QuestaoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +34,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
         <option value="Record" />
-        <option value="Enum" />
       </list>
     </option>
   </component>

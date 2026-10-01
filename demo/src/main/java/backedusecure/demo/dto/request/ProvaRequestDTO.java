@@ -1,7 +1,12 @@
 package backedusecure.demo.dto.request;
 
-import java.time.LocalDateTime;
+import org.hibernate.query.SelectionQuery;
+import org.w3c.dom.stylesheets.LinkStyle;
 
-public record ProvaRequestDTO(String titulo, String disciplina, LocalDateTime dataCriacao) {
+import java.time.LocalDateTime;
+import java.util.List;
+
+public record ProvaRequestDTO(String titulo, String disciplina, List<QuestaoRequestDTO> questoes, LocalDateTime dataCriacao) {
+
 
 }

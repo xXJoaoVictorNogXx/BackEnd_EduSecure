@@ -24,7 +24,9 @@ public class ProvaMapper {
                     prova.getIdProva(),
                     prova.getTitulo(),
                     prova.getDisciplina(),
+                    prova.getQuestoes(),
                     prova.getDataCriacao()
+
            );
        }
 }
